@@ -250,9 +250,9 @@ def build_main_menu() -> QuickReply:
             ),
             QuickReplyItem(
                 action=PostbackAction(
-                    label="📖 คู่มือ",
+                    label="📖 คู่มือการขาย",
                     data="menu=manual",
-                    display_text="📖 คู่มือ",
+                    display_text="📖 คู่มือการขาย",
                 )
             ),
             QuickReplyItem(
