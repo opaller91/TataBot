@@ -95,11 +95,6 @@ ADMINS = [
         "phone": "06-3561-6215",
         "role": "PLP เพื่อนสุขภาพ",
     },
-    {
-        "name": "Admin 4",
-        "phone": "08X-XXX-XXXX",
-        "role": "PLP เพื่อนสุขภาพ",
-    },
 ]
 
 LATEST_NEWS = """
@@ -241,13 +236,13 @@ def build_main_menu() -> QuickReply:
                     display_text="🎯 สินค้า Focus",
                 )
             ),
-            QuickReplyItem(
-                action=PostbackAction(
-                    label="📊 Dashboard",
-                    data="menu=dashboard",
-                    display_text="📊 Dashboard",
-                )
-            ),
+            # QuickReplyItem(
+            #     action=PostbackAction(
+            #         label="📊 Dashboard",
+            #         data="menu=dashboard",
+            #         display_text="📊 Dashboard",
+            #     )
+            # ),
             QuickReplyItem(
                 action=PostbackAction(
                     label="📖 คู่มือการขาย",
@@ -434,7 +429,7 @@ def handle_postback(
     menu_answers = {
         "menu=sales_form": sales_form_message,
         "menu=focus": focus_product_message,
-        "menu=dashboard": dashboard_message,
+        #"menu=dashboard": dashboard_message,
         "menu=manual": manual_message,
         "menu=contact": contact_message,
         "menu=news": news_message,
